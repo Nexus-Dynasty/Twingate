@@ -20,7 +20,7 @@ body {
 #top {
     position: fixed;
     top: 90%;
-    right: 10%;
+    right: 5%;
 }
 
 #top i {
@@ -110,6 +110,7 @@ header {
 
 header {
     margin: 0;
+    padding-bottom: 0 !important;
     top: 0%;
     left: 0%;
     z-index: 1;
@@ -513,9 +514,10 @@ footer nav button:hover {
     }
     
     .card {
-        width: 100%;
+        width: 90%;
         padding: 1rem 0;
-        margin: 0.3rem 0;
+        margin: auto;
+        display: block;
     }
 
     main article {
@@ -529,6 +531,10 @@ footer nav button:hover {
     
     .base, .trans {
         font-size: 1rem;
+    }
+    
+    .margin {
+        margin-bottom: 1rem;
     }
     
     main section .modal .widget {
@@ -664,7 +670,9 @@ footer nav button:hover {
     }
     
     main .box {
-        width: 47%;
+        width: 48%;
+        margin: auto;
+        display: inline-block;
     }
 
     .showcase {
