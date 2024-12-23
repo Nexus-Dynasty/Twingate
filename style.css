@@ -1,0 +1,723 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+:root{
+    --pri: rgb(0, 217, 255);
+    --ash: rgb(66, 66, 66);
+    --white: white;
+    --trans: .4s ease;
+}
+
+body {
+    color: white;
+    background-color: rgb(5, 4, 4);
+}
+
+#top {
+    position: fixed;
+    top: 90%;
+    right: 10%;
+}
+
+#top i {
+    font-size: 2rem;
+    color: white;
+}
+
+#top i:hover {
+    color: var(--pri);
+}
+
+header {
+    padding: 1rem 0 0 0;
+}
+
+.progress-container {
+    width: 100%;
+    height: 8px;
+    background: #ccc;
+    margin-top: 2rem;
+}
+
+.progress-bar {
+    width: 0%;
+    height: 8px;
+    background: var(--pri) !important;
+}
+
+.navbar input[type="checkbox"],
+.navbar .hamburger-lines {
+    display: none;
+}
+
+.navbar {
+    width: 100%;
+    height: 30px;
+    z-index: 100;
+    opacity: 0.85;
+    color: white;
+    padding: 1rem 2rem;
+}
+
+.navbar-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu-items {
+    order: 2;
+    display: flex;
+}
+
+.logo {
+    order: 1;
+    font-size: 1.3rem;
+    margin: 0 1rem 0 0;
+}
+
+.menu-items li {
+    list-style: none;
+}
+
+.navbar a {
+    color: #444;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar a::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    border-radius: 5px;
+    transform: scalex(0);
+    transition: all 0.6s ease;
+    bottom: 0;
+    left: 0;
+}
+
+.navbar a:hover::before {
+    transform: scalex(1);
+}
+
+header {
+    margin: 0;
+    top: 0%;
+    left: 0%;
+    z-index: 1;
+    width: 100%;
+    position: fixed;
+    border-bottom: 0.3px solid var(--ash);
+    backdrop-filter: blur(8.9px);
+    -webkit-backdrop-filter: blur(8.9px);
+    background: rgba(0, 0, 0, 0.14);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1rem;
+    display: inline-block;
+}
+
+header ul {
+    list-style: none;
+    margin: 0;
+}
+
+a {
+    padding: 10px;
+    text-decoration: none;
+}
+
+header a, header li {
+    color: white;
+    font-weight: 600;
+}
+
+a:hover {
+    transition: var(--trans);
+    background-color: var(--ash);
+    border-radius: 5px;
+}
+
+button {
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-weight: 900;
+    border-radius: 15px;
+    background-color: rgb(43, 43, 43);
+}
+
+main article {
+    padding-top: 10rem !important;
+}
+
+main p {
+    color: darkgray;
+}
+
+main p.title {
+    font-size: 25px;
+    text-align: center;
+}
+
+.block, .align {
+    display: block;
+    text-align: center;
+}
+
+.title, .subtitle {
+    text-align: center;
+}
+
+.trans {
+    background-color: transparent;
+    border: 3px solid transparent;
+}
+
+.trans:hover {
+    color: var(--pri);
+    transition: var(--trans);
+    text-decoration: underline;
+    border: 3px solid var(--pri);
+}
+
+.pri {
+    color: black;
+    background-color: white;
+}
+
+.pri:hover {
+    color: white;
+    transition: var(--trans);
+    background-color: var(--ash);
+}
+
+button.base {
+    background: rgba(252, 247, 247, 0.22);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(14.3px);
+    -webkit-backdrop-filter: blur(14.3px);
+    border: 1px solid rgba(252, 247, 247, 0.48);
+    border: 2px solid rgba(252, 247, 247, 0.48);
+    z-index: 0;
+}
+
+button.base:hover {
+    color: var(--pri);
+    border: 2px solid var(--pri);
+}
+
+p.base {
+    color: var(--pri);
+    font-weight: 900;
+}
+
+.sec {
+    color: black;
+    background-color: var(--pri);
+    border: 2px solid transparent;
+}
+
+.sec:hover {
+    color: white;
+    transition: var(--trans);
+    border: 2px solid white;
+    background-color: transparent;
+}
+
+.card {
+    width: 30%;
+    margin: 10px;
+    min-height: 4rem;
+    display: inline-block;
+}
+
+.card i {
+    display: block;
+    font-size: 2rem;
+    margin: 1rem 0;
+    color: var(--pri);
+}
+
+main h1.title {
+    font-size: 3rem;
+    font-weight: 100;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main h1.subtitle {
+    font-size: 2rem;
+    font-weight: 100;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h2.minititle {
+    font-size: 1.2rem;
+}
+
+p.minititle {
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+main section {
+    margin: 10rem 0;
+}
+
+main .box, .modal {
+    width: 100%;
+    margin: 5px;
+    padding: 10px;
+    min-height: 20rem;
+    border-radius: 20px;
+    display: inline-block;
+    border: 1px solid var(--ash);
+}
+
+main .box:hover, main .modal:hover {
+    transition: var(--trans);
+    border: 1px solid var(--pri);
+}
+
+main .box button {
+    margin-top: 5px;
+}
+
+main .box .board {
+    width: 100%;
+    height: 20rem;
+}
+
+.modal {
+    display: flex;
+}
+
+main section .modal .widget {
+    width: 50%;
+    height: fit-content;
+    margin: auto;
+    padding: 1rem;
+    border-radius: 10px;
+    background-color: rgb(32, 28, 28);
+    padding: 1;
+}
+
+main .modal .widget h3, main .modal .widget p {
+    margin: 10px;
+    display: block;
+    text-align: center !important;
+}
+
+main section .left .modal .widget button {
+    margin: auto;
+    display: block;
+    text-align: center;
+}
+
+main .showcase {
+    width: 100%;
+    height: fit-content;
+    padding: 2rem 1rem;
+    border-radius: 10px;
+    background-color: rgb(82, 1, 148);
+}
+
+footer section {
+    margin: 5rem 0;
+}
+
+footer h1 {
+    margin: 0;
+    font-size: 3.3rem;
+    font-weight: 100;
+    margin-bottom: 30px;
+    text-align: left !important;
+}
+
+footer .links {
+    margin: 3rem 0;
+}
+
+footer .page {
+    max-width: 45%;
+    margin: 5px;
+    height: 23rem;
+    display: inline-block;
+}
+
+footer .page a {
+    color: white;
+}
+
+footer .page a:hover {
+    transition: var(--trans);
+    text-decoration: underline;
+}
+
+footer .page b,
+footer .page a {
+    width: 100%;
+    float: left;
+    margin: 5px 0;
+    display: block;
+}
+
+footer nav {
+    float: right;
+}
+
+footer nav button {
+    border-radius: 7px;
+    border: 1px solid var(--ash);
+    background-color: transparent;
+}
+
+footer nav button:hover {
+    color: var(--pri);
+    border: 1px solid var(--pri);
+    transition: var(--trans);
+    background-color: var(--ash);
+}
+
+@media (max-width: 500px) {
+    .navbar-container input[type="checkbox"]:checked~.logo {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .navbar {
+        opacity: 0.95;
+    }
+    
+    .navbar-container input[type="checkbox"],
+        .navbar-container .hamburger-lines {
+        display: block;
+    }
+    
+    .navbar-container {
+        display: block;
+        position: relative;
+        height: 64px;
+    }
+    
+    .navbar-container input[type="checkbox"] {
+        position: absolute;
+        display: block;
+        height: 40px;
+        width: 32px;
+        top: -5px;
+        left: -20px;
+        z-index: 5;
+        opacity: 0;
+        cursor: pointer;
+    }
+    
+    .navbar-container .hamburger-lines {
+        display: block;
+        height: 28px;
+        width: 35px;
+        position: absolute;
+        top: 0px;
+        left: -20px;
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    .navbar-container .hamburger-lines .line {
+        display: block;
+        height: 4px;
+        width: 100%;
+        border-radius: 10px;
+        background: #333;
+    }
+    
+    .navbar-container .hamburger-lines .line1 {
+        transform-origin: 0% 0%;
+        transition: transform 0.3s ease-in-out;
+    }
+    
+    .navbar-container .hamburger-lines .line2 {
+        transition: transform 0.2s ease-in-out;
+    }
+    
+    .navbar-container .hamburger-lines .line3 {
+        transform-origin: 0% 100%;
+        transition: transform 0.3s ease-in-out;
+    }
+    
+    .navbar .menu-items {
+        padding: 100px;
+        background: black;
+        height: 100vh;
+        max-width: 300px;
+        transform: translate(-150%);
+        display: flex;
+        flex-direction: column;
+        margin-left: -40px;
+        padding-left: 40px;
+        transition: transform 0.5s ease-in-out;
+        box-shadow: 1px 0px 5px 0px #aaa;
+        overflow: scroll;
+    }
+    
+    .navbar .menu-items a {
+        margin-bottom: 0.3rem;
+        font-size: 1.1rem;
+        font-weight: 500;
+    }
+    
+    .logo {
+        position: absolute;
+        top: -5px;
+        left: 30px;
+        font-size: 2rem;
+    }
+    
+    .navbar-container input[type="checkbox"]:checked~.menu-items {
+        transform: translateX(0);
+    }
+    
+    .navbar-container input[type="checkbox"]:checked~.hamburger-lines .line1 {
+        transform: rotate(45deg);
+    }
+    
+    .navbar-container input[type="checkbox"]:checked~.hamburger-lines .line2 {
+        transform: scaleY(0);
+    }
+    
+    .navbar-container input[type="checkbox"]:checked~.hamburger-lines .line3 {
+        transform: rotate(-45deg);
+    }
+    
+    .menu-items li {
+        font-size: 1.3rem;
+    }
+
+    header h1 {
+        font-weight: 900;
+    }
+    
+    .card {
+        width: 100%;
+        padding: 1rem 0;
+        margin: 0.3rem 0;
+    }
+
+    main article {
+        padding-top: 7rem;
+    }
+
+    .menu-items button {
+        display: block;
+        margin: 10px 0;
+    }
+    
+    .base, .trans {
+        font-size: 1rem;
+    }
+    
+    main section .modal .widget {
+        width: 80%;
+    }
+    
+    footer section {
+        margin: 3rem 0;
+    }
+    
+    footer .page {
+        min-width: 45%;
+    }
+
+    footer hr {
+        margin: 2rem 0 1rem 0;
+    }
+    
+    footer nav button {
+        margin: 5px 0;
+        width: 45%;
+        display: inline-block;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    body {
+        padding: 0 0.8rem;
+    }
+
+    header {
+        padding: 1rem;
+    }
+
+    br { 
+        display: none;
+    }
+
+    button {
+        text-align: center;
+        margin: auto;
+    }
+    
+    main article {
+        padding-top: 16rem;
+    }
+
+    main .box {
+        place-items: center;
+        display: grid;
+    }
+
+    main .left .box .widget {
+        width: 70%;
+    }
+    
+    .showcase .right b {
+        text-align: center !important;
+        display: block;
+    }
+    
+    .showcase .right {
+        margin-top: 3rem;
+        position: relative;
+    }
+    
+    .showcase .right ul li {
+        margin: 10px;
+        font-weight: 100;
+    }
+
+    footer {
+        padding-bottom: 3rem;
+    }
+    
+    footer .page {
+        max-width: 30%;
+    }
+    
+    footer nav button {
+        max-width: 28%;
+        margin: 5px;
+        display: inline-block;
+    }
+}
+
+@media screen and (min-width: 1204px) {
+    body {
+        padding: 0 9.5rem;
+    }
+
+    main {
+        margin-top: 5rem;
+    }
+
+    header {
+        left: 9%;
+        width: max-content;
+    }
+    
+    header nav {
+        margin: 0;
+        width: fit-content;
+        display: inline-block;
+    }
+
+    main h1 {
+        margin: 3rem 0 0 1rem;
+        font-size: 6em;
+        font-weight: 000;
+    }
+    
+    header .tab {
+        margin-left: 9rem;
+        display: inline-block;
+    }
+    
+    main h1.title {
+        font-size: 4rem;
+        font-weight: 100;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    main h1.subtitle {
+        font-size: 3rem;
+        font-weight: 100;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    main .card {
+        width: 30%;
+        height: 4rem;
+    }
+    
+    main .box {
+        width: 47%;
+    }
+
+    .showcase {
+        padding: 5rem 2rem !important;
+    }
+
+    main aside {
+        width: 45%;
+        display: inline-block;
+    }
+
+    .align {
+        text-align: unset;
+    }
+
+    main aside .box {
+        width: 100% !important;
+        height: 23rem !important;
+    }
+
+    main aside.right .base, main aside.right h1.subtitle, main aside.right p.minititle {
+        text-align: left;
+        float: left;
+    }
+
+    main aside h1.subtitle {
+        margin: 0;
+    }
+
+    main aside.left {
+        text-align: left;
+    }
+
+    main aside.right {
+        width: 50% !important;
+        float: right;
+    }
+
+    main aside ul li {
+        margin: 10px;
+        font-weight: 100;
+    }
+
+    main aside h1.subtitle {
+        text-align: left;
+    }
+
+    main aside button.main aside {
+        display: block !important;
+        position: relative !important;
+    }
+    
+    footer .page {
+        max-width: 18%;
+    }
+}
