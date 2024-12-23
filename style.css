@@ -534,11 +534,15 @@ footer nav button:hover {
     }
     
     .margin {
-        margin-bottom: 1rem;
+        margin-bottom: 1rem !important;
     }
     
     main section .modal .widget {
         width: 80%;
+    }
+
+    .showcase {
+        width: 90%;
     }
     
     footer section {
